@@ -39,6 +39,22 @@ func main() {
 	increaseGlobalCount()
 	// Call function print global count
 	printGlobalCount()
+
+	var arraysOfInt = []int{1, 2, 3, 4, 5}
+	var arraysOfString = []string{"one", "two", "three", "four", "five"}
+	var arraysOfFloat = []float64{1.1, 2.2, 3.3, 4.4, 5.5}
+
+	fmt.Println("arraysOfInt: ", arraysOfInt)
+	fmt.Println("arraysOfString: ", arraysOfString)
+	fmt.Println("arraysOfFloat: ", arraysOfFloat)
+
+	var emptyArrayOfFloat [5]float64
+
+	for index, number := range arraysOfInt {
+		emptyArrayOfFloat[index] = float64(number) + arraysOfFloat[index]
+	}
+	fmt.Println("emptyArrayOfFloat: ", emptyArrayOfFloat)
+
 }
 
 func increaseGlobalCount() {
