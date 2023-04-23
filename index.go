@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// Global variable declaration
+var global_count int = 0
+
 func main() {
 	fmt.Println("all of variables in golang")
 
@@ -25,4 +28,11 @@ func main() {
 	fmt.Println("number_imp_var: ", number_imp_var)
 	fmt.Println("string_imp_var: ", string_imp_var)
 	fmt.Println("bool2_var: ", bool2_var)
+
+	// Global variable print
+	fmt.Println("global_count: ", global_count)
+	global_count++
+	// self = self + 1
+	fmt.Println("global_count: ", global_count)
+
 }
