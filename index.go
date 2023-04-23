@@ -18,6 +18,11 @@ func main() {
 	fmt.Println("bool_var: ", bool_var)
 
 	// Implicitly declare variable type
+	number_imp_var := 0
+	string_imp_var := "this is Implicit variable"
 	bool2_var := true
+
+	fmt.Println("number_imp_var: ", number_imp_var)
+	fmt.Println("string_imp_var: ", string_imp_var)
 	fmt.Println("bool2_var: ", bool2_var)
 }
