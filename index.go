@@ -35,4 +35,16 @@ func main() {
 	// self = self + 1
 	fmt.Println("global_count: ", global_count)
 
+	// Call function increase global count
+	increaseGlobalCount()
+	// Call function print global count
+	printGlobalCount()
+}
+
+func increaseGlobalCount() {
+	global_count++
+}
+
+func printGlobalCount() {
+	fmt.Println("global_count: ", global_count)
 }
